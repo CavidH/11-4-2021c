@@ -5,7 +5,7 @@ using _11_4_2021c.Abstract;
 
 namespace _11_4_2021c.Model
 {
-    class Bird : Animal 
+    public class Bird : Animal 
     {
         public override void Eat()
         {
@@ -20,6 +20,10 @@ namespace _11_4_2021c.Model
         public override void Sleep()
         {
             Console.WriteLine("sleep as bird");
+        }
+
+        public Bird(string name) : base(name)
+        {
         }
     }
 }

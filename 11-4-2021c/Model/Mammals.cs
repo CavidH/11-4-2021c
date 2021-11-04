@@ -7,6 +7,10 @@ namespace _11_4_2021c.Model
 {
     class Mammals : Animal 
     {
+        public Mammals(string name) : base(name)
+        {
+        }
+
         public override void Eat()
         {
             Console.WriteLine("eat as Mammals ");

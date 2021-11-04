@@ -7,6 +7,11 @@ namespace _11_4_2021c.Model
 {
     class Monkey :Mammals,IRun
     {
+        public Monkey(string name, int runSpeed) : base(name)
+        {
+            RunSpeed = runSpeed;
+        }
+
         public int RunSpeed { get ; set; }
 
         public override void Eat()

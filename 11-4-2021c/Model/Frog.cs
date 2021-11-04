@@ -11,11 +11,15 @@ namespace _11_4_2021c.Model
         public int SwimSpeed { get; set; }
         public int RunSpeed { get; set; }
 
-        
+        public Frog(string name, int swimSpeed, int runSpeed) : base(name)
+        {
+            SwimSpeed = swimSpeed;
+            RunSpeed = runSpeed;
+        }
 
         void ISwim.Swim()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Amphibians Eat");
         }
         public override void Eat()
         {
@@ -37,5 +41,7 @@ namespace _11_4_2021c.Model
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

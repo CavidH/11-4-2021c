@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _11_4_2021c.Model
 {
-    class Fish : Animal
+    public class Fish : Animal
     {
         public override void Eat()
         {
@@ -19,6 +19,10 @@ namespace _11_4_2021c.Model
         public override void Sleep()
         {
             Console.WriteLine("Eat as Fish");
+        }
+
+        public Fish(string name) : base(name)
+        {
         }
     }
 }

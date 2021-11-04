@@ -1,4 +1,5 @@
 ﻿using System;
+using _11_4_2021c.Model;
 
 namespace _11_4_2021c
 {
@@ -6,7 +7,8 @@ namespace _11_4_2021c
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Eagle eagle1 = new Eagle("Eagle", 45);
+            eagle1.Live();
         }
     }
 }

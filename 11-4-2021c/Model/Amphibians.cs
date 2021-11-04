@@ -22,5 +22,9 @@ namespace _11_4_2021c.Model
         {
             Console.WriteLine("Amphibians Sleep");
         }
+
+        public Amphibians(string name) : base(name)
+        {
+        }
     }
 }
